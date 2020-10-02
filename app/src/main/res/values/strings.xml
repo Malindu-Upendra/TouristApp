@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="heading">Ceylon Trips and Tramps</string>
+    <string name="heading2">Start Your Adventure Today</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="aboutus">ABOUT US</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_full_name">Full Name</string>
+    <string name="enter_user_name">User Name</string>
+    <string name="enter_email">Email</string>
+    <string name="password">Password</string>
+    <string name="next_btn">Next</string>
+</resources>

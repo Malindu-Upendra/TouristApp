@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_roomreserve"
+            android:icon="@drawable/room"
+            android:title="Room Reservation" />
+
+        <item
+            android:id="@+id/nav_vehiclereservation"
+            android:icon="@drawable/vehicle"
+            android:title="Vehicle Reservation" />
+
+        <item
+            android:id="@+id/nav_packages"
+            android:icon="@drawable/packages"
+            android:title="Package Reservation" />
+    </group>
+
+    <item android:title="Profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile"
+                    android:title="Profile" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_fc"
+                android:icon="@drawable/feed_com"
+                android:title="Feedback And Complaint" />
+
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

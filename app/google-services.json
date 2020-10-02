@@ -1,0 +1,164 @@
+{
+  "project_info": {
+    "project_number": "19412089990",
+    "firebase_url": "https://tripsandtramps-d188a.firebaseio.com",
+    "project_id": "tripsandtramps-d188a",
+    "storage_bucket": "tripsandtramps-d188a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:b3a55df23eedaa7ee56507",
+        "android_client_info": {
+          "package_name": "com.example.b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:204f889ac69b3b4de56507",
+        "android_client_info": {
+          "package_name": "com.example.dashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:b59efb6e6caec267e56507",
+        "android_client_info": {
+          "package_name": "com.example.fcupdatedelete2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-crb5feknr1g4c6k4d22je8rt8g7596h0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fcupdatedelete2",
+            "certificate_hash": "aafb3ed6fd5416532107da9e67c4fca26dd2c86c"
+          }
+        },
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:fdc651e24e1b1252e56507",
+        "android_client_info": {
+          "package_name": "com.example.roomreservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:21d06ae6d16e2a04e56507",
+        "android_client_info": {
+          "package_name": "com.example.tripsandtramps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
