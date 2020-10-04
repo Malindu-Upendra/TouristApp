@@ -17,30 +17,4 @@
     <string name="enter_email">Email</string>
     <string name="password">Password</string>
     <string name="next_btn">Next</string>
-
-    <string name="jfhgdfbfdnzdcxvcbvbn_mjlk">jfhgdfbfdnzdcxvcbvbn,mjlk</string>
-    <string name="jgfdxcvbjkl_mnhjgfcjg">jgfdxcvbjkl,mnhjgfcjg</string>
-    <string name="delete1">Delete</string>
-    <string name="option">Option</string>
-    <string name="update1">Update</string>
-    <string name="delete">Delete</string>
-    <string name="todo">Todo</string>
-    <string name="ceylon_trips_tramps"><![CDATA[Ceylon Trips & Tramps]]></string>
-    <string name="submit">Submit</string>
-    <string name="feedback">Feedback And Complaint</string>
-    <string name="enter_your_complaint">Let Us Know Your Any of complaint.</string>
-    <string name="entered_feedbacks">We Value Your Feedback.</string>0
-
-    <string-array name="Menu">
-        <item>Menu</item>
-        <item>Home</item>
-        <item>About US</item>
-        <item>Contact US</item>
-        <item>Profile</item>
-
-    </string-array>
-    <string name="update2">Update</string>
-    <string name="delete2">Delete</string>
-    <string name="enter_your_feedbacks">Enter your Feedbacks And Complaints</string>
-    <string name="Feedbacks">Feedbacks</string>
 </resources>

@@ -45,13 +45,13 @@
                 android:hint="@string/enter_full_name"
                 app:startIconDrawable="@drawable/fullname_icon"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
-                android:textColorHint="@color/black"
+                app:startIconTint="@color/Black"
+                app:hintTextColor="@color/Black"
+                android:textColorHint="@color/Black"
                 app:endIconMode="clear_text"
-                app:endIconTint="@color/black"
+                app:endIconTint="@color/Black"
                 app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/Black">
 
 
 
@@ -68,13 +68,13 @@
                 android:hint="@string/enter_user_name"
                 app:startIconDrawable="@drawable/profile"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
-                android:textColorHint="@color/black"
+                app:startIconTint="@color/Black"
+                app:hintTextColor="@color/Black"
+                android:textColorHint="@color/Black"
                 app:endIconMode="clear_text"
-                app:endIconTint="@color/black"
+                app:endIconTint="@color/Black"
                 app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/Black">
 
 
 
@@ -91,13 +91,13 @@
                 android:hint="@string/enter_email"
                 app:startIconDrawable="@drawable/email"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
-                android:textColorHint="@color/black"
+                app:startIconTint="@color/Black"
+                app:hintTextColor="@color/Black"
+                android:textColorHint="@color/Black"
                 app:endIconMode="clear_text"
-                app:endIconTint="@color/black"
+                app:endIconTint="@color/Black"
                 app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/Black">
 
 
 
@@ -114,13 +114,13 @@
                 android:hint="@string/password"
                 app:startIconDrawable="@drawable/password"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
-                android:textColorHint="@color/black"
+                app:startIconTint="@color/Black"
+                app:hintTextColor="@color/Black"
+                android:textColorHint="@color/Black"
                 app:endIconMode="password_toggle"
-                app:endIconTint="@color/black"
+                app:endIconTint="@color/Black"
                 app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/Black">
 
 
 
@@ -139,7 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/next_btn"
-            android:textColor="@color/black"
+            android:textColor="@color/Black"
             android:layout_marginTop="20dp"
             android:elevation="5dp"
             android:onClick="callNextSignUpScreen"

@@ -72,11 +72,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
                 break;
-            /*case R.id.nav_logout;
-                Intent intent = new Intent(MainActivity.this,Login.class);
-                startActivity(intent);
+            case R.id.nav_roomreserve:
+                Intent intent1 = new Intent(MainActivity.this,RoomSelection.class);
+                startActivity(intent1);
                 break;
-            case R.id.nav_logout;
+            /*case R.id.nav_logout;
                 Intent intent = new Intent(MainActivity.this,Login.class);
                 startActivity(intent);
                 break;
