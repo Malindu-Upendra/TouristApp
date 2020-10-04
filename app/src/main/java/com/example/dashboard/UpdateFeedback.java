@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DatabaseReference;
@@ -52,28 +53,21 @@ public class UpdateFeedback extends AppCompatActivity implements NavigationView.
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
-
         navigationView.setCheckedItem(R.id.nav_fc);
-
         feedbackupdate = findViewById(R.id.textView7);
-
         btnupdate = findViewById(R.id.button4);
         btndelete = findViewById(R.id.button6);
-
-        feedback = new FeedbackInsert();
-
         dbref = FirebaseDatabase.getInstance().getReference().child("Feedback");
-
         FeedbackInsert feedbackInsert = (FeedbackInsert) getIntent().getSerializableExtra("feedback");
-
         feedbackupdate.setText(feedbackInsert.getFeedback());
 
         btndelete.setOnClickListener((view) -> {
-            dbref.child(feedback.getKey()).removeValue();
+            dbref.child(feedbackInsert.getKey()).removeValue();
+            Toast.makeText(getApplicationContext(),"Deleted Successfully",Toast.LENGTH_SHORT).show();
         });
 
-        btndelete.setOnClickListener((view)->{
-            dbref.child(feedback.getKey()).child("feedback").setValue(feedbackupdate.getText().toString().trim());
+        btnupdate.setOnClickListener((view)->{
+            dbref.child(feedbackInsert.getKey()).child("feedback").setValue(feedbackupdate.getText().toString().trim());
         });
     };
 
