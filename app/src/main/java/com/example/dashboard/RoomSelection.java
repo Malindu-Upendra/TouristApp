@@ -2,10 +2,14 @@ package com.example.dashboard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -22,6 +26,8 @@ public class RoomSelection extends AppCompatActivity implements NavigationView.O
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    Spinner spin;
+    Button confirmRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,20 @@ public class RoomSelection extends AppCompatActivity implements NavigationView.O
                 android.R.layout.simple_spinner_item,roomType);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         selection.setAdapter(adapter);
+
+        spin = findViewById(R.id.selection);
+
+        confirmRoom = findViewById(R.id.confirmRoom);
+
+        confirmRoom.setOnClickListener((view)->{
+
+            Log.d("Spinner = ",spin.getSelectedItem().toString());
+            Intent intent = new Intent(RoomSelection.this,Room_Confirm_1.class);
+            intent.putExtra("RoomType", spin.getSelectedItem().toString());
+            startActivity(intent);
+
+        });
+
 
 }
 

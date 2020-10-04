@@ -28,6 +28,9 @@ public class Room_Confirm_1 extends AppCompatActivity implements NavigationView.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String roomtype = (String)getIntent().getSerializableExtra("RoomType");
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_room_confirm_1);
 
