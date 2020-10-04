@@ -67,6 +67,14 @@ public class UpdateFeedback extends AppCompatActivity implements NavigationView.
         FeedbackInsert feedbackInsert = (FeedbackInsert) getIntent().getSerializableExtra("feedback");
 
         feedbackupdate.setText(feedbackInsert.getFeedback());
+
+        btndelete.setOnClickListener((view) -> {
+            dbref.child(feedback.getKey()).removeValue();
+        });
+
+        btndelete.setOnClickListener((view)->{
+            dbref.child(feedback.getKey()).child("feedback").setValue(feedbackupdate.getText().toString().trim());
+        });
     };
 
     @Override
