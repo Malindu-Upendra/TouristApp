@@ -17,4 +17,40 @@
     <string name="enter_email">Email</string>
     <string name="password">Password</string>
     <string name="next_btn">Next</string>
+    <string name="Name">Room/nReservation</string>
+    <string name="BackButton">Back</string>
+    <string name="ReserveNo">Reservation No</string>
+    <string name="Select_Room_Type">*Select Room Type</string>
+    <string name="Room_Type">Room Type</string>
+    <string name="Beds">No Of Beds</string>
+    <string name="No_Of_Kids">No. Of Kids</string>
+    <string name="No_Of_Room">No. Of Room</string>
+    <string name="Check_In_Date">Check In Date</string>
+    <string name="Check_Out_Date">Check Out Date</string>
+    <string name="Requirment">Remarks</string>
+    <string name="SearchRoom">Search Room</string>
+    <string name="DeleteButton">Delete Reservation</string>
+    <string name="UpdateButton">Update Reservation</string>
+    <string name="ConfirmBooking">Confirm Reservation</string>
+    <string name="RoomType1">Normal</string>
+    <string name="RoomType2">King</string>
+    <string name="RoomType3">Queen</string>
+    <string name="RoomType4">Deluxe</string>
+    <string name="ProceedingMessage">Do you want to Reserve a vehicle?</string>
+    <string name="ceylon_trips_tramps"><![CDATA[Ceylon Trips & Tramps]]></string>
+    <string name="todo">TODO</string>
+    <string name="activity">ACTIVITY</string>
+    <string name="No_Of_Adults">No. Of Adults </string>
+    <string-array name="room_types">
+        <item>King</item>
+        <item>Queen</item>
+        <item>Deluxe</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="Number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>
