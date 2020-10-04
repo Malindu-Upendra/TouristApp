@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -19,6 +20,11 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class RoomSelection extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -28,6 +34,7 @@ public class RoomSelection extends AppCompatActivity implements NavigationView.O
     Toolbar toolbar;
     Spinner spin;
     Button confirmRoom;
+    DatabaseReference dbreff;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,11 +60,8 @@ public class RoomSelection extends AppCompatActivity implements NavigationView.O
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
-
         navigationView.setCheckedItem(R.id.nav_roomreserve);
-
         selection = findViewById(R.id.selection);
-
         String[] roomType = getResources().getStringArray(R.array.room_types);
         ArrayAdapter adapter = new ArrayAdapter(this,
                 android.R.layout.simple_spinner_item,roomType);
@@ -65,20 +69,46 @@ public class RoomSelection extends AppCompatActivity implements NavigationView.O
         selection.setAdapter(adapter);
 
         spin = findViewById(R.id.selection);
-
         confirmRoom = findViewById(R.id.confirmRoom);
 
-        confirmRoom.setOnClickListener((view)->{
+        /*confirmRoom.setOnClickListener((view)->{
 
-            Log.d("Spinner = ",spin.getSelectedItem().toString());
+
+            dbreff = FirebaseDatabase.getInstance().getReference().child("Room_types");
+            dbreff.orderByChild("roomType").equalTo(spin.getSelectedItem().toString()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if (snapshot.exists()) {
+                        Room rmm = new Room();
+                        rmm.setNumOfRooms(snapshot.child("numOfRooms").getValue().toString().trim());
+                        rmm.setAmount(snapshot.child("amount").getValue().toString().trim());
+                        rmm.setRoomType(snapshot.child("roomType").getValue().toString().trim());
+
+                    }else{
+                        Toast.makeText(getApplicationContext(), "No Such Data", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+
             Intent intent = new Intent(RoomSelection.this,Room_Confirm_1.class);
-            intent.putExtra("RoomType", spin.getSelectedItem().toString());
+            intent.putExtra("RoomDetails", rmm);
             startActivity(intent);
-
-        });
+        });*/
 
 
 }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+
+    }
 
     @Override
     public void onBackPressed() {

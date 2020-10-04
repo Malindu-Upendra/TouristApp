@@ -2,9 +2,11 @@ package com.example.dashboard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
@@ -24,12 +26,12 @@ public class Room_Confirm_1 extends AppCompatActivity implements NavigationView.
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    RoomReservation roomReservation;
+    Button button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        String roomtype = (String)getIntent().getSerializableExtra("RoomType");
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_room_confirm_1);
@@ -77,6 +79,23 @@ public class Room_Confirm_1 extends AppCompatActivity implements NavigationView.
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         NoOfRooms.setAdapter(adapter2);
 
+        Room roomm = (Room) getIntent().getSerializableExtra("RoomDetails");
+        roomReservation = new RoomReservation();
+
+        /*roomReservation.setType(roomm.getRoomType());
+        roomReservation.setNoOfAdults(NoOfAdults.getSelectedItem().hashCode());
+        roomReservation.setNoOfchildren(NoOfKids.getSelectedItem().hashCode());
+        roomReservation.setRooms(NoOfRooms.getSelectedItem().hashCode());
+        roomReservation.setType(roomm.getRoomType());*/
+
+        button6 = findViewById(R.id.button6);
+
+        button6.setOnClickListener((view)->{
+            Intent intent = new Intent(Room_Confirm_1.this,Room_Confirm_2.class);
+            intent.putExtra("RoomReservation", roomReservation);
+            intent.putExtra("roomm",  roomm);
+            startActivity(intent);
+        });
     }
 
     @Override
