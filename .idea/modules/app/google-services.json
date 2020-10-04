@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "19412089990",
+    "firebase_url": "https://tripsandtramps-d188a.firebaseio.com",
+    "project_id": "tripsandtramps-d188a",
+    "storage_bucket": "tripsandtramps-d188a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:b3a55df23eedaa7ee56507",
+        "android_client_info": {
+          "package_name": "com.example.b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-fbjpg0bndcmph7oa5mij89daikqm69jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.b",
+            "certificate_hash": "fc30d58ed37911d0556b20c13663613a92c0f2bc"
+          }
+        },
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:406d5ead9ee840a7e56507",
+        "android_client_info": {
+          "package_name": "com.example.dashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-lthk2bo6u6co4ltlgt3r2vtqchotboge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dashboard",
+            "certificate_hash": "aafb3ed6fd5416532107da9e67c4fca26dd2c86c"
+          }
+        },
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19412089990:android:21d06ae6d16e2a04e56507",
+        "android_client_info": {
+          "package_name": "com.example.tripsandtramps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9KyAFynIURBP4c4kJjQmXCbSC-T4m9bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19412089990-8llqi217jepjl18ul0ohir3416m10aaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
