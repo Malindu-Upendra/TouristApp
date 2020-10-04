@@ -33,6 +33,9 @@ public class PackageReservationForm extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_package_reservation_form);
 
+        start_date = findViewById(R.id.start_date);
+        end_date = findViewById(R.id.end_date);
+
         start_date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,7 +100,7 @@ public class PackageReservationForm extends AppCompatActivity {
         start_date = (TextView) findViewById(R.id.start_date);
         end_date = (TextView) findViewById(R.id.end_date);
 
-        aPackage = (Package) getIntent().getSerializableExtra("Package");
+       aPackage = (Package) getIntent().getSerializableExtra("Package");
         aa = findViewById(R.id.editTextTextPersonName);
         bb = findViewById(R.id.editTextTextPersonName2);
         dd = findViewById(R.id.editTextTextPersonName3);
@@ -107,6 +110,58 @@ public class PackageReservationForm extends AppCompatActivity {
         bb.setText(aPackage.getTourGuideName());
         cc.setText(aPackage.getAmount());
 
+        btnback = findViewById(R.id.back);
+        btnconfirm = findViewById(R.id.confirmm);
+
+        btnback.setOnClickListener((view)->{
+            Intent intent = new Intent(AvailableVehicles.this,retrievee.class);
+            startActivity(intent);
+        });
+
+        btnconfirm.setOnClickListener((view)->{
+
+            mDisplayFrom = findViewById(R.id.fromm);
+            mDisplayToo = findViewById(R.id.too);
+            try {
+                frommm = new SimpleDateFormat("mm/dd/yyyy").parse(mDisplayFrom.getText().toString());
+                tooo = new SimpleDateFormat("mm/dd/yyyy").parse(mDisplayToo.getText().toString());
+            } catch (ParseException e) {
+                Toast.makeText(AvailableVehicles.this,"invalid type",Toast.LENGTH_SHORT).show();
+            }
+            diff = tooo.getDate()-frommm.getDate();
+            amount = diff * vehicle.getAmountForADay();
+
+            vehicle_reservation = new Vehicle_Reservation(vehicle.getVehicleNumber(),vehicle.getVehicleBrand(),vehicle.getVehicleType(),vehicle.getNumOfSeats(),amount,frommm,tooo);
+
+            dbref = FirebaseDatabase.getInstance().getReference().child("Vehicle_Reservation").child(User.getUsername());
+
+            dbref.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if(snapshot.exists()){
+
+                        num = snapshot.getChildrenCount();
+
+                        Log.d("--number of children--",String.valueOf(num));
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+
+            String ReservationID = dbref.push().getKey();
+            Log.d("number children outside",ReservationID);
+            vehicle_reservation.setKey(ReservationID);
+            dbref.child(vehicle_reservation.getKey()).setValue(vehicle_reservation);
+            Toast.makeText(AvailableVehicles.this,"Data inserted succesfully",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(AvailableVehicles.this,finalReservationpage.class);
+            intent.putExtra("vehicle_reservation", vehicle_reservation);
+            startActivity(intent);
+        });
+    }
 
     }
 }

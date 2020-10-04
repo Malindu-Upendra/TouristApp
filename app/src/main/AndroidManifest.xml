@@ -10,14 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SignUp2ndClass"></activity>
-        <activity android:name=".SignUp" />
-        <activity android:name=".Login" />
-        <activity android:name=".StartUpScreen">
+        <activity android:name=".PackageReservationForm">
+
+        </activity>
+        <activity android:name=".PackageReservation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".AddPackages" >
+
+        </activity>
+        <activity android:name=".Package_Update"></activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".StartUpScreen">
+
         </activity>
         <activity android:name=".MainActivity" />
 

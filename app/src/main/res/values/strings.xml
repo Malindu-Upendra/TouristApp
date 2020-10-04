@@ -17,4 +17,12 @@
     <string name="enter_email">Email</string>
     <string name="password">Password</string>
     <string name="next_btn">Next</string>
+    <string name="activity_name">Activity Name</string>
+    <string name="tour_guide_name">Tour Guide Name</string>
+    <string name="amount">Amount</string>
+    <string name="location">Location</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="reserve_package">Reserve Package</string>
+
 </resources>
