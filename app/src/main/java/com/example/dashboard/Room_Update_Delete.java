@@ -64,7 +64,7 @@ public class Room_Update_Delete extends AppCompatActivity implements NavigationV
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        navigationView.setCheckedItem(R.id.nav_home);
+        navigationView.setCheckedItem(R.id.nav_roomreserve);
 
         NoAdults = findViewById(R.id.NoAdults);
         NoKids = findViewById(R.id.NoKids);

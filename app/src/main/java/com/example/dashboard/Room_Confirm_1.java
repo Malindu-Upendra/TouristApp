@@ -48,7 +48,7 @@ public class Room_Confirm_1 extends AppCompatActivity implements NavigationView.
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        navigationView.setCheckedItem(R.id.nav_home);
+        navigationView.setCheckedItem(R.id.nav_roomreserve);
 
         NoOfAdults = findViewById(R.id.NoOfAdults);
         NoOfKids = findViewById(R.id.NoOfKids);

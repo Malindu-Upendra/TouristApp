@@ -60,7 +60,7 @@ public class Room_Confirm_2 extends AppCompatActivity implements NavigationView.
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        navigationView.setCheckedItem(R.id.nav_home);
+        navigationView.setCheckedItem(R.id.nav_roomreserve);
 
         checkIn = (TextView) findViewById(R.id.dateIn);
         checkOut = (TextView) findViewById(R.id.dateOut);
