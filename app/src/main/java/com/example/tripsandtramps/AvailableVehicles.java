@@ -159,23 +159,6 @@ public class AvailableVehicles extends AppCompatActivity {
 
             dbref = FirebaseDatabase.getInstance().getReference().child("Vehicle_Reservation").child(User.getUsername());
 
-            dbref.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if(snapshot.exists()){
-
-                        num = snapshot.getChildrenCount();
-
-                        Log.d("--number of children--",String.valueOf(num));
-                    }
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
-
             String ReservationID = dbref.push().getKey();
             Log.d("number children outside",ReservationID);
             vehicle_reservation.setKey(ReservationID);

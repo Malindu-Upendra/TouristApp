@@ -25,10 +25,10 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public void setdataaa(Context context, Vehicle vehi)
     {
 
-        TextView textview = itemView.findViewById(R.id.textview_row);
+        TextView textview = itemView.findViewById(R.id.vehicleBrand);
         Button btn = itemView.findViewById(R.id.button);
 
-        textview.setText("\t\t\t\t\t" + vehi.getVehicleBrand() + "\t\t\t\t\t\t\t\t\t\t" + vehi.getAmountForADay());
+        textview.setText("\t\t\t\t\t" + vehi.getVehicleBrand() + "\t\t\t\t\t\t\t\t\t" + vehi.getAmountForADay());
 
        btn.setOnClickListener((view)->{
             Intent intent = new Intent(context.getApplicationContext(),AvailableVehicles.class);

@@ -26,7 +26,7 @@ public class ViewHolderForReservations extends RecyclerView.ViewHolder {
         TextView Vnumber,Vbrand,Vtype,numofseats,amount,fromm,too;
         Button delete,update ;
 
-        Vnumber = itemView.findViewById(R.id.Vnumber);
+        Vnumber = itemView.findViewById(R.id.Vnum);
         Vbrand = itemView.findViewById(R.id.Vbrand);
         Vtype = itemView.findViewById(R.id.Vtype);
         numofseats = itemView.findViewById(R.id.numofseats);
@@ -36,13 +36,13 @@ public class ViewHolderForReservations extends RecyclerView.ViewHolder {
         delete = itemView.findViewById(R.id.delete);
         update = itemView.findViewById(R.id.update);
 
-        Vnumber.setText("Vehicle Number = " + vr.getVehicleNumber());
-        Vbrand.setText("Vehicle Brand = " + vr.getVehicleBrand());
-        Vtype.setText("Vehicle Type = " + vr.getVehicleType());
-        numofseats.setText("Number of Seats = " + vr.getNumOfSeats());
-        amount.setText("Amount for the Reservation = " + vr.getFinalAmount());
-        fromm.setText("From = " + vr.getFromm());
-        too.setText("to = " + vr.getToo());
+        Vnumber.setText(vr.getVehicleNumber());
+        Vbrand.setText(vr.getVehicleBrand());
+        Vtype.setText(vr.getVehicleType());
+       numofseats.setText(Integer.toString(vr.getNumOfSeats()));
+       amount.setText(Double.toString(vr.getFinalAmount()));
+        fromm.setText(String.valueOf(vr.getFromm()));
+        too.setText(String.valueOf(vr.getToo()));
 
         delete.setOnClickListener((view)->{
 
@@ -52,9 +52,9 @@ public class ViewHolderForReservations extends RecyclerView.ViewHolder {
         });
 
         update.setOnClickListener((view)->{
-            Intent intent = new Intent(context.getApplicationContext(),retrievee.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);
+
+
+
         });
 
 
